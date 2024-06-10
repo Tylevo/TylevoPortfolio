@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Hohor - Portfolio & Gallery">
+    <meta name="keywords" content="gallery,masonry,grid">
+    <meta name="author" content="Yucel Yilmaz">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Levandusky - Portfolio & Gallery</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+    <!--// Required Css Files //-->
+    <link rel="stylesheet" href="fancybox.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="slideshow.css">
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('Tylevo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ... other styles remain unchanged */
+
+
+
+/* ... other styles remain unchanged */
+#portfolio-wrapper-dark {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('Tylevo2.jpg');
+}
+
+
+
+
+
+
+
+.typing-demo {
+    width: 22.8ch;
+    animation: typing 1.2s steps(22), blink 1s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    font-size: 66px;
+    color: #fff;
+    font-weight: 500;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 22.8ch; /* Set this to the full width of your text */
+    }
+}
+
+/* CSS for smaller screens */
+@media (max-width: 767px) {
+    .typing-demo {
+        font-size: 24px; /* reduce font size for smaller screens */
+        animation: none; /* Remove the typing animation for smaller screens */
+    }
+}
+
+
+    .portfolio-filter-dark {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .portfolio-filter-dark a {
+        margin: 5px 0; /* add vertical spacing between buttons */
+    }
+    
+    .contact-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 35px;
+        }
+
+        .contact-box label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .contact-box button {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 0px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .about-me-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-top: -350px; /* Adjust as needed */
+}
+
+
+        .about-me-box p {
+            color: #fff;
+        }
+</style>
+</head>
+<body>
+<div class="fixed-nav-bar">
+  <div class="menu-toggler-container">
+    <input type="checkbox" id="menuButton" class="menu-toggler">
+<label for="menuButton" class="menu-button-label">
+    <span class="shutter"></span>
+    <span class="white-bar"></span>
+    <span class="white-bar"></span>
+    <span class="white-bar"></span>
+    <span class="white-bar"></span>
+</label>
+
+  </div>
+  <nav class="nav-items">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a class="dropdown-toggle" href="#" role="button" id="photographyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Photography</a>
+      <div class="dropdown-menu" aria-labelledby="photographyDropdown">
+        <a class="dropdown-item" href="sports.html">Sports</a>
+        <a class="dropdown-item" href="portrait.html">Portrait</a>
+        <a class="dropdown-item" href="landscape.html">Landscape</a>
+        <div class="dropdown">
+          <a class="dropdown-item dropdown-toggle" href="#" id="submenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Submenu</a>
+          <div class="dropdown-menu" aria-labelledby="submenu">
+            <a class="dropdown-item" href="#">Sub Item 1</a>
+            <a class="dropdown-item" href="#">Sub Item 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logo">
+      <a href="index.html" style="color: #CCCCCB; text-decoration: none;"><span>Tylevo</span>Photography</a>
+    </div>
+    <a href="about.html">Graphics</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+    <div class="the-bass">
+      <div class="menu-items">
+        <a href="index.html">Home</a>
+        <a href="portrait.html">Portrait</a>
+        <a href="landscape.html">Landscape</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+    <!--// Portfolio Dark Wrapper Start //-->
+    <div id="portfolio-wrapper-dark">
+
+    <section class="section pb-minus-70">
+ 
+    </section>
+        <!--// Portfolio Masonry Filter End //-->
+
+ 
+        <!--// Footer Start //-->
+        <footer class="footer">
+            <div class="container">
+                <p class="copyright-text">© Copyright 2023 Tyler Levandusky </p>
+            </div>
+        </footer>
+        <!--// Footer End //-->
+
+    <!--// Portfolio Dark Wrapper End //-->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+// Initialize ScrollReveal
+ScrollReveal({ duration: 1500, cleanup: true });
+
+// Reveal each image on scroll
+ScrollReveal().reveal('.item', {
+  delay: 200,
+  distance: '30px',
+  easing: 'ease-in-out',
+  origin: 'bottom',
+  reset: false,
+  opacity: 0, // Start from completely transparent
+  interval: 100, // Add a 100ms delay between each item
+});
+
+</script>
+<script>
+  const menuButton = document.getElementById("menuButton");
+const theBass = document.querySelector(".the-bass");
+
+menuButton.addEventListener("change", function () {
+  if (this.checked) {
+    theBass.classList.add("dropped");
+  } else {
+    theBass.classList.remove("dropped");
+  }
+});
+
+</script>
+    <!--// Required JS Files //-->
+    <script src="slick.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="waypoints.min.js"></script>
+    <script src="jquery.easing.min.js"></script>
+    <script src="isotope.min.js"></script>
+    <script src="images.loaded.min.js"></script>
+    <script src="tilt.jquery.js"></script>
+    <script src="fancybox.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

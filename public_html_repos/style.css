@@ -1,0 +1,689 @@
+/* -------------------------------------------------------------------
+ * Plugin Name           : Hohor - Portfolio & Gallery
+ * Author Name           : Yucel Yilmaz
+ * Author URI            : https://codecanyon.net/user/aip_theme3434
+ * Created Date          : 22 May 2020
+ * Version               : 1.0
+ * File Name             : style.css
+------------------------------------------------------------------- */
+/* -------------------------------------------------------------------
+   Base
+   ------------------------ /
+ * 01.Base
+ * 02.Typography
+ * 03.Helper Class
+ * 04.Buttons
+ * 05.Portfolio (Gallery)
+ * 07.Footer
+ * 08.Intro
+
+------------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* 01.Base
+/* ---------------------------------------------------------------- */
+body, html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background: #f59d2b;
+  color: #fff;
+}
+
+::selection {
+  background: #f59d2b;
+  color: #fff;
+}
+
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+textarea, textarea:focus, input, input:focus, button, button:focus {
+  outline: none;
+  resize: inherit;
+}
+
+/* ---------------------------------------------------------------- */
+/* 02.Typography
+/* ---------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000;
+  text-transform: capitalize;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1, .h1 {
+  font-size: 3rem;
+}
+
+h2, .h2 {
+  font-size: 66px;
+}
+
+h3, .h3 {
+  font-size: 30px;
+}
+
+h4, .h4 {
+  font-size: 22px;
+}
+
+h5, .h5 {
+  font-size: 20px;
+}
+
+h6, .h6 {
+  font-size: 18px;
+}
+
+p {
+  line-height: 28px;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* 03.Helper Class
+/* ---------------------------------------------------------------- */
+.page-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.section {
+  padding: 100px 0 70px 0;
+  overflow: hidden;
+}
+
+.section .heading-mb {
+  margin-bottom: 50px;
+}
+
+.section .section-heading .section-title {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section .section-heading .section-title span {
+  margin-left: 15px;
+  color: #f59d2b;
+}
+
+.section .section-heading .section-title:after, .section .section-heading .section-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-radius: 100px;
+}
+
+.section .section-heading .section-title:after {
+  width: 100px;
+  height: 2px;
+  background: #eee;
+  bottom: 0;
+}
+
+.section .section-heading .section-title:before {
+  width: 40px;
+  height: 6px;
+  background: #f59d2b;
+  z-index: 5;
+  bottom: -2px;
+}
+
+#portfolio-wrapper-dark {
+  background: #1b1b1b;
+}
+
+#portfolio-wrapper-dark .section .section-heading .section-title {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+  color: #fff;
+}
+
+#portfolio-wrapper-dark .section .section-heading .section-title span {
+  margin-left: 15px;
+  color: #f59d2b;
+}
+
+#portfolio-wrapper-dark .section .section-heading .section-title:after, #portfolio-wrapper-dark .section .section-heading .section-title:before {
+  content: "";
+  left: 0;
+  position: absolute;
+  border-radius: 100px;
+}
+
+#portfolio-wrapper-dark .section .section-heading .section-title:after {
+  width: 100px;
+  height: 2px;
+  background: #f5f5f5;
+  bottom: 0;
+}
+
+#portfolio-wrapper-dark .section .section-heading .section-title:before {
+  width: 40px;
+  height: 6px;
+  background: #f59d2b;
+  z-index: 5;
+  bottom: -2px;
+}
+
+#portfolio-wrapper-dark .section .section-heading p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.read-more-btn {
+  text-align: right;
+}
+
+.pb-minus-70 {
+  padding-bottom: 70px;
+}
+
+.bg-light-grey {
+  background: #f5f5f5;
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Small devices (tablets, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 767.98px) {
+  .read-more-btn {
+    margin-top: 30px;
+    text-align: left;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 575.98px) {
+  .section .section-heading .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* 04.Buttons
+/* ---------------------------------------------------------------- */
+.default-dark-button {
+  display: inline-block;
+  background: transparent;
+  color: #fff !important;
+  border: 2px solid #f59d2b;
+  padding: 17px 50px;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.default-dark-button:hover {
+  background: #f59d2b;
+  color: #fff !important;
+}
+
+.default-button {
+  display: inline-block;
+  background: transparent;
+  color: #f59d2b !important;
+  border: 2px solid #f59d2b;
+  padding: 17px 50px;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.default-button:hover {
+  background: #f59d2b;
+  color: #fff !important;
+}
+
+/* ---------------------------------------------------------------- */
+/* 05.Portfolio (Gallery)
+/* ---------------------------------------------------------------- */
+.portfolio-filter-light {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.portfolio-filter-light a {
+  display: inline-block;
+  padding: 11px 22px;
+  background: transparent;
+  color: #f59d2b;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 2px solid #f59d2b;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.portfolio-filter-light a:last-child {
+  margin-right: 0;
+}
+
+.portfolio-filter-light a.current {
+  background: #f59d2b;
+  color: #fff;
+}
+
+.portfolio-filter-light a:hover {
+  background: #f59d2b;
+  color: #fff;
+}
+
+.portfolio-filter-dark {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.portfolio-filter-dark a {
+  display: inline-block;
+  padding: 11px 22px;
+  background: transparent;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 2px solid #f59d2b;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.portfolio-filter-dark a:last-child {
+  margin-right: 0;
+}
+
+.portfolio-filter-dark a.current {
+  background: #f59d2b;
+  color: #fff;
+}
+
+.portfolio-filter-dark a:hover {
+  background: #f59d2b;
+  color: #fff;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-item .portfolio-item-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-item-img {
+  border-radius: 3px;
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-item-img img {
+  border-radius: 3px;
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-item-img:after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  background: #1b1b1b;
+  pointer-events: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  border-radius: 3px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: transform 0.5s cubic-bezier(1, 0.2, 0.5, 1), -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-details {
+  left: 30px;
+  z-index: 15;
+  bottom: 20px;
+  opacity: 0;
+  border-radius: 4px;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #fff !important;
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-details h5 {
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-details h5 a {
+  color: #fff;
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-details h5 a:hover {
+  color: #f59d2b !important;
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-details h5:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  opacity: 0;
+  background: #fff;
+  pointer-events: none;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: transform 0.5s cubic-bezier(1, 0.2, 0.5, 1), -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-details span {
+  position: relative;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.portfolio-item .portfolio-item-inner .portfolio-details span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #fff;
+  pointer-events: none;
+  border-radius: 4px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+  transition: transform 0.5s cubic-bezier(1, 0.2, 0.5, 1), -webkit-transform 0.5s cubic-bezier(1, 0.2, 0.5, 1);
+}
+
+.portfolio-item:hover .portfolio-item-inner .portfolio-item-img:after {
+  opacity: 0.9;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.portfolio-item:hover .portfolio-item-inner .portfolio-details {
+  opacity: 1;
+  bottom: 30px;
+}
+
+.portfolio-item:hover .portfolio-item-inner .portfolio-details h5:after, .portfolio-item:hover .portfolio-item-inner .portfolio-details span:after {
+  opacity: 1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.portfolio-item .portfolio-item-inner .portfolio-item-img1 img {
+  width: 1000px; /* You can set the desired width here, e.g. 300px */
+  height: 500px; /* You can set the desired height here, e.g. 200px */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio while covering the entire container */
+  border-radius: 3px;
+}
+.portfolio-item .portfolio-item-inner .portfolio-item-img2 img {
+  width: 1000px; /* You can set the desired width here, e.g. 300px */
+  height: 650px; /* You can set the desired height here, e.g. 200px */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio while covering the entire container */
+  border-radius: 3px;
+}
+.portfolio-item .portfolio-item-inner .portfolio-item-img3 img {
+  width: 1000px; /* You can set the desired width here, e.g. 300px */
+  height: 500px; /* You can set the desired height here, e.g. 200px */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio while covering the entire container */
+  border-radius: 3px;
+}
+.portfolio-item .portfolio-item-inner .portfolio-item-img4 img {
+  width: 1000px; /* You can set the desired width here, e.g. 300px */
+  height: 650px; /* You can set the desired height here, e.g. 200px */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio while covering the entire container */
+  border-radius: 3px;
+}
+.portfolio-item .portfolio-item-inner .portfolio-item-img5 img {
+  width: 1000px; /* You can set the desired width here, e.g. 300px */
+  height: 650px; /* You can set the desired height here, e.g. 200px */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio while covering the entire container */
+  border-radius: 3px;
+}
+.portfolio-item .portfolio-item-inner .portfolio-item-img6 img {
+  width: 1000px; /* You can set the desired width here, e.g. 300px */
+  height: 650px; /* You can set the desired height here, e.g. 200px */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio while covering the entire container */
+  border-radius: 3px;
+}
+.portfolio-item .portfolio-item-inner .portfolio-item-img7 img {
+  width: 1000; /* You can set the desired width here, e.g. 300px */
+  height: 650; /* You can set the desired height here, e.g. 200px */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio while covering the entire container */
+  border-radius: 3px;
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 450px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 450.98px) {
+  .portfolio-filter-dark a:last-child, .portfolio-filter-light a:last-child {
+    margin-top: 12px;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* 07.Footer
+/* ---------------------------------------------------------------- */
+footer.footer {
+  padding: 30px;
+  background: #1E1E1E;
+}
+
+footer.footer .copyright-text {
+  text-align: center;
+  opacity: 0.8;
+  color: #fff;
+}
+
+footer.footer .copyright-text span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* ---------------------------------------------------------------- */
+/* 08.Intro
+/* ---------------------------------------------------------------- */
+.intro-jumbotron {
+  height: 650px;
+  background: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-jumbotron h2, .intro-jumbotron h1, .intro-jumbotron p {
+  color: #fff;
+}
+
+.intro-jumbotron h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.intro-jumbotron h1 {
+  margin-bottom: 10px;
+}
+
+.intro-jumbotron p {
+  line-height: 28px;
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+
+.demo-section {
+  padding: 100px 0 70px 0;
+  overflow: hidden;
+}
+
+.demo-section .heading-mb {
+  margin-bottom: 50px;
+}
+
+.demo-section .demo-heading {
+  text-align: center;
+}
+
+.demo-section .demo-heading .demo-title {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.demo-section .demo-heading .demo-title span {
+  margin-left: 15px;
+  color: #f59d2b;
+}
+
+.demo-section .demo-heading .demo-title:after, .demo-section .demo-heading .demo-title:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-radius: 100px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.demo-section .demo-heading .demo-title:after {
+  width: 100px;
+  height: 2px;
+  background: #eee;
+  bottom: 0;
+}
+
+.demo-section .demo-heading .demo-title:before {
+  width: 40px;
+  height: 6px;
+  background: #f59d2b;
+  z-index: 5;
+  bottom: -2px;
+}
+
+.demo-item {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(61, 82, 96, 0.15);
+          box-shadow: 0 10px 30px 0 rgba(61, 82, 96, 0.15);
+  border-radius: 5px 5px 0 0;
+}
+
+.demo-item:hover {
+  -webkit-box-shadow: 0 20px 40px 0 rgba(61, 82, 96, 0.2);
+          box-shadow: 0 20px 40px 0 rgba(61, 82, 96, 0.2);
+}
+
+.demo-item:hover .demo-img .demo-overlay {
+  top: 0;
+  opacity: 1;
+}
+
+.demo-item:hover .demo-overlay i {
+  display: block;
+}
+
+.demo-item:hover .demo-item-link {
+  background: #f59d2b;
+  color: #fff;
+}
+
+.demo-item .demo-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.demo-item .demo-img img {
+  width: 100%;
+}
+
+.demo-item .demo-item-link {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 30px;
+  display: block;
+  border-radius: 0 0 5px 5px;
+  color: #000;
+  background: #fff;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+
+.fancybox-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.fancybox-carousel img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.swiper-slide img {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}

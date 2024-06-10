@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tyler's Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="navar.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <h1 class="headline">
+  </h1>
+<div class="fixed-nav-bar">
+  <div class="logo"><span>Tylevo</span>Photography</div>
+  <input type="checkbox" id="menuButton" />
+  <label for="menuButton" class="menu-button-label menu-toggler">
+    <div class="white-bar"></div>
+    <div class="white-bar"></div>
+    <div class="white-bar"></div>
+    <div class="white-bar"></div>
+  </label>
+<nav class="nav-items">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="photographyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Photography</a>
+        <div class="dropdown-menu" aria-labelledby="photographyDropdown">
+            <a class="dropdown-item" href="portrait.html">Portrait</a>
+            <a class="dropdown-item" href="landscape.html">Landscape</a>
+        </div>
+    </div>
+    <a href="graphics.html">Graphics</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+  <!-- ... rest of the fixed-nav-bar code ... -->
+</div>
+
+<div class="the-bass">
+
+</div>
+</div>
+    <div class="rela-block color-square-container">
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+        <div class="color-changing-square"></div>
+    </div>
+<style>
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-container .item {
+  flex: 0 0 25%;
+  margin: 1.5%;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.image-container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center center;
+}
+html, body, .container-fluid, .row, .image-container {
+  min-height: 100%;
+  margin: 0;
+}
+.image-container .item:hover img {
+  transform: scale(1.05);
+}
+.item.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: transparent; /* make the background transparent */
+  margin-top: 10; /* center the box */
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.02);
+    box-shadow: 0 0 15px 2px rgba(0,0,0,0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: 0.35s ease;
+}
+.fixed-nav-bar .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    color: #CCC;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.fixed-nav-bar .logo span {
+    color: #E78533;
+    font-weight: 600;
+}
+.fixed-nav-bar.scrolled {
+    min-height: 60px;
+    background-color: #FDFDFD;
+    box-shadow: 0 0 30px 3px rgba(0,0,0,0.6);
+}
+.fixed-nav-bar.scrolled .logo {
+    color: black;
+}
+.fixed-nav-bar.scrolled .menu-button-label .white-bar {
+    background-color: black;
+}
+.fixed-nav-bar {
+    /* Add a transition for background-color and box-shadow */
+    transition: background-color 0.35s ease, box-shadow 0.35s ease;
+    /* Other existing styles remain unchanged */
+}
+
+.fixed-nav-bar .logo {
+    /* Add a transition for color */
+    transition: color 0.35s ease;
+    /* Other existing styles remain unchanged */
+}
+.fixed-nav-bar .logo {
+  position: absolute;
+  left: 10px;
+  top: 51%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 25px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.fixed-nav-bar .logo span {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.fixed-nav-bar.scrolled {
+  min-height: 60px;
+  background-color: rgb(0 123 255 / 0%);
+  box-shadow: 0 0 30px 3px rgba(0,0,0,0.7);
+}
+.fixed-nav-bar.scrolled .logo {
+  color: #fdfdfd;
+}
+.fixed-nav-bar.scrolled .menu-button-label .white-bar {
+  background-color: #000;
+}
+
+.nav-items {
+  display: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 60px; /* Add this line */
+  font-size: 28px; /* Add this line */
+}
+
+.nav-items a:hover {
+  color: #E78533;
+}
+
+.fancybox-bg {
+  background-color: rgba(0, 0, 0, .8); /* Set the background color and opacity here */
+}
+@media (min-width: 992px) {
+  .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .the-bass,
+  .menu-toggler {
+    display: none;
+  }
+
+  /* Center the nav-items */
+  .nav-items {
+    width: 100%; /* Add this line */
+    margin-left: auto; /* Add this line */
+    margin-right: auto; /* Add this line */
+  }
+}
+@media (max-width: 991px) {
+  .nav-items {
+    display: none;
+  }
+  .the-bass,
+  .menu-toggler {
+    display: block;
+  }
+
+  .the-bass {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 10;
+    display: none;
+  }
+
+  .the-bass.dropped {
+    display: block;
+  }
+
+  .the-bass a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .the-bass a:hover {
+    background-color: #111;
+  }
+}
+</style>
+<div class="item horizontal sr" style="margin-right: 0px; margin-top: 100px;">
+    <a href="Car.jpg" class="img-fluid car-image" data-fancybox="gallery1">
+        <img src="Car.jpg" alt="Top Image" class="img-fluid">
+    </a>
+</div>
+
+
+
+<p class="tagline">
+    Featured <span class="punchline">Photos</span>
+</p>
+
+<div class="container-fluid">
+<!-- ... rest of the code ... -->
+
+    <div class="row mt-4">
+    <div class="image-container masonry">
+             <div class="item vertical sr">
+                <a href="I1.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="I1.jpg"  alt="Greece Church" class="img-fluid">
+                </a>
+            </div>
+             <div class="item vertical sr">
+                <a href="I3.jpg" target="_top" class="fancybox" data-fancybox="gallery1">
+                    <img src="I3.jpg"  alt="Greece Horse" class="img-fluid">
+                </a>
+            </div>
+             <div class="item vertical sr">
+                <a href="I5.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="I5.jpg"  alt="Greece Dog" class="img-fluid">
+                </a>
+            </div>
+ <div class="item vertical sr">
+        <a href="I11.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I11.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I17.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I17.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I12.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I12.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I3.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I3.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I1.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I5.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I5.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I3.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I3.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I1.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+ <div class="item vertical sr">
+        <a href="I3.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="I3.jpg"  alt="Greece Sunset" class="img-fluid">
+        </a>
+    </div>
+</div>
+
+  	<div class="section-center">
+  		<h1 class="mb-0"></h1>
+  	</div>
+
+
+<!-- Include the ScrollReveal library -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script>
+  // Initialize ScrollReveal
+  ScrollReveal({ duration: 1000 });
+
+  // Reveal each image on scroll
+  ScrollReveal().reveal('.item', {
+    delay: 200,
+    distance: '50px',
+    easing: 'ease-in-out',
+    origin: 'bottom',
+    reset: true
+  });
+</script>
+</div>
+<script>
+document.getElementById('menuButton').addEventListener('change', function () {
+    document.querySelector('.the-bass').classList.toggle('dropped');
+});
+</script>
+<!-- Include jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Function to change the nav-bar on scroll
+        $(window).scroll(function () {
+            $(window).scrollTop() >= 100
+                ? ($(".fixed-nav-bar").addClass("scrolled"),
+                  $(".the-bass").addClass("scrolled"))
+                : ($(".fixed-nav-bar").removeClass("scrolled"),
+                  $(".the-bass").removeClass("scrolled"));
+        });
+
+        // Drop Down Function
+        $("#menuButton").on("change", function () {
+            $("#menuButton").is(":checked")
+                ? $(".the-bass").addClass("dropped")
+                : $(".the-bass").removeClass("dropped");
+        });
+    });
+</script>
+<script>
+  document.getElementById("menuButton").addEventListener("change", function () {
+    document.querySelector(".the-bass").classList.toggle("dropped");
+    document.querySelector(".the-bass").innerHTML = document.querySelector(
+      ".nav-items"
+    ).innerHTML;
+  });
+</script>
+
+<!-- Include the Fancybox library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+</div>
+
+</body>
+</html>
